@@ -16,8 +16,8 @@ export default defineConfig({
 
     // 注册使用Svg插件
     createSvgIconsPlugin({
-      iconDirs: [path.resolve(process.cwd(), "src/assets/icons")], // 矢量图标存放的地方
-      symbolId: "icon-[dir]-[name]",  // svg 组件名称的组成规则
+      iconDirs: [path.resolve(process.cwd(), "src/assets/icons")], // 设置矢量图标存放的地方
+      symbolId: "icon-[dir]-[name]",  // 唯一标识而已, 并无太多用处
     }),
 
     // 以自动导入的方式 继承 elementPlus

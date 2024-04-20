@@ -7,7 +7,11 @@ const app = createApp(App)
 import 'virtual:svg-icons-register'
 
 // 注册Svg为全局组件
-import SvgIcon from './components/SvgIcon/index.vue'
-app.component('SvgIcon', SvgIcon)
+// import SvgIcon from './components/SvgIcon/index.vue'
+// app.component('SvgIcon', SvgIcon)
+
+// 使用批量注册全局组件的插件
+import globalComponents from './components/index'
+app.use(globalComponents)
 
 app.mount('#app')

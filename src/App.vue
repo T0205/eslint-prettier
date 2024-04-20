@@ -8,9 +8,14 @@
 </template>
 
 <script setup lang='ts'>
-import { onMounted } from 'vue';
+
+// 不用导入了
+ref()
+
+reactive()
 
 onMounted(() => { })
+
 
 </script>
 
